@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FreshBite | My Account</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+🍕 FreshBite
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="restaurants.html">Restaurants</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<a href="wishlist.html">
+
+<i class="fa-solid fa-heart"></i>
+
+</a>
+
+<a href="cart.html" class="cart-btn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>My Account</h2>
+
+<p>Manage your profile and orders</p>
+
+</div>
+
+<div class="account-container">
+
+<div class="profile-card">
+
+<i class="fa-solid fa-user-circle profile-icon"></i>
+
+<h2 id="profileName">
+
+Guest User
+
+</h2>
+
+<p id="profileEmail">
+
+guest@example.com
+
+</p>
+
+<p id="profilePhone">
+
++91 0000000000
+
+</p>
+
+<button
+class="btn primary-btn"
+onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+<div class="order-history">
+
+<h2>
+
+Recent Orders
+
+</h2>
+
+<div id="ordersContainer">
+
+<p>
+
+No Orders Yet.
+
+</p>
+
+</div>
+
+<a
+href="wishlist.html"
+class="btn secondary-btn">
+
+View Wishlist
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="copyright">
+
+© 2026 FreshBite. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/common.js"></script>
+
+<script>
+
+const ordersContainer=document.getElementById("ordersContainer");
+
+const orders=JSON.parse(localStorage.getItem("orders"))||[];
+
+if(orders.length){
+
+ordersContainer.innerHTML="";
+
+orders.reverse().forEach(order=>{
+
+ordersContainer.innerHTML+=`
+
+<div class="order-card">
+
+<h3>${order.orderId}</h3>
+
+<p><strong>Date:</strong> ${order.orderDate}</p>
+
+<p><strong>Status:</strong> ${order.status}</p>
+
+<p><strong>Payment:</strong> ${order.payment}</p>
+
+<p><strong>Total:</strong> ₹${order.total.toFixed(2)}</p>
+
+</div>
+
+`;
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>

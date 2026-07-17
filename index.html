@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite | Online Food Ordering</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+🍕 FreshBite
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="restaurants.html">Restaurants</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<a href="wishlist.html">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+<a href="cart.html">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cartCount">0</span>
+</a>
+
+<a href="login.html" class="loginBtn">
+Login
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Delicious Food
+Delivered
+To Your Door
+</h1>
+
+<p>
+
+Discover amazing restaurants near you and
+order your favourite meals instantly.
+
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search food, restaurant...">
+
+<button>
+
+<i class="fa fa-search"></i>
+
+Search
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900"
+alt="Pizza">
+
+</div>
+
+</section>
+
+<!-- Categories -->
+
+<section class="categories">
+
+<h2>
+
+Popular Categories
+
+</h2>
+
+<div class="category-container">
+
+<div class="category-card">
+
+🍕
+<h3>Pizza</h3>
+
+</div>
+
+<div class="category-card">
+
+🍔
+
+<h3>Burger</h3>
+
+</div>
+
+<div class="category-card">
+
+🍗
+
+<h3>Chicken</h3>
+
+</div>
+
+<div class="category-card">
+
+🥗
+
+<h3>Healthy</h3>
+
+</div>
+
+<div class="category-card">
+
+🥤
+
+<h3>Drinks</h3>
+
+</div>
+
+<div class="category-card">
+
+🍰
+
+<h3>Desserts</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Featured Foods -->
+
+<section class="featured">
+
+<h2>
+
+Featured Dishes
+
+</h2>
+
+<div class="food-container" id="featuredFoods">
+
+<!-- Generated using JavaScript -->
+
+</div>
+
+</section><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite | Online Food Ordering</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🍕 FreshBite
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="restaurants.html">Restaurants</a></li>
+
+                <li><a href="menu.html">Menu</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-icons">
+
+                <a href="wishlist.html">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+
+                <a href="cart.html" class="cart-btn">
+
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span id="cartCount">0</span>
+
+                </a>
+
+                <a href="login.html" class="login-btn" id="loginButton">
+
+                    Login
+
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <span class="tag">
+                #1 Food Delivery Platform
+            </span>
+
+            <h1>
+
+                Delicious Food
+
+                Delivered
+
+                To Your Door
+
+            </h1>
+
+            <p>
+
+                Order your favorite dishes from top restaurants near you.
+                Fast delivery, fresh ingredients, and amazing offers.
+
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="Search food, restaurants...">
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <div class="hero-buttons">
+
+                <a href="menu.html" class="btn primary-btn">
+
+                    Explore Menu
+
+                </a>
+
+                <a href="restaurants.html" class="btn secondary-btn">
+
+                    Restaurants
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900"
+                alt="Pizza">
+
+        </div>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <div class="section-title">
+
+            <h2>
+
+                Popular Categories
+
+            </h2>
+
+            <p>
+
+                Explore your favorite cuisines
+
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+
+                🍕
+                <h3>Pizza</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🍔
+                <h3>Burger</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🍗
+                <h3>Chicken</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🥘
+                <h3>Biryani</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🥗
+                <h3>Healthy</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🍜
+                <h3>Chinese</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🍰
+                <h3>Desserts</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                🥤
+                <h3>Beverages</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED FOOD ================= -->
+
+    <section class="featured">
+
+        <div class="section-title">
+
+            <h2>
+
+                Featured Dishes
+
+            </h2>
+
+            <p>
+
+                Handpicked dishes loved by thousands
+
+            </p>
+
+        </div>
+
+        <div class="food-grid" id="featuredFoods">
+
+            <!-- Generated by JavaScript -->
+
+        </div>
+
+    </section>
+        <!-- ================= SPECIAL OFFERS ================= -->
+
+    <section class="offers">
+
+        <div class="section-title">
+
+            <h2>Special Offers</h2>
+
+            <p>Save more on your favorite meals</p>
+
+        </div>
+
+        <div class="offer-container">
+
+            <div class="offer-card">
+
+                <h3>50% OFF</h3>
+
+                <p>On Your First Order</p>
+
+                <a href="menu.html" class="btn primary-btn">Order Now</a>
+
+            </div>
+
+            <div class="offer-card">
+
+                <h3>Free Delivery</h3>
+
+                <p>Orders Above ₹499</p>
+
+                <a href="menu.html" class="btn primary-btn">Explore</a>
+
+            </div>
+
+            <div class="offer-card">
+
+                <h3>Buy 1 Get 1</h3>
+
+                <p>Selected Pizzas</p>
+
+                <a href="menu.html" class="btn primary-btn">Grab Offer</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= POPULAR RESTAURANTS ================= -->
+
+    <section class="restaurants">
+
+        <div class="section-title">
+
+            <h2>Popular Restaurants</h2>
+
+            <p>Top rated restaurants near you</p>
+
+        </div>
+
+        <div class="restaurant-grid">
+
+            <div class="restaurant-card">
+
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"
+                    alt="Pizza Hub">
+
+                <div class="restaurant-info">
+
+                    <h3>Pizza Hub</h3>
+
+                    <p>Italian • Pizza</p>
+
+                    <span>⭐ 4.8 | 25 mins</span>
+
+                </div>
+
+            </div>
+
+            <div class="restaurant-card">
+
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600"
+                    alt="Burger Town">
+
+                <div class="restaurant-info">
+
+                    <h3>Burger Town</h3>
+
+                    <p>Burgers • Fast Food</p>
+
+                    <span>⭐ 4.6 | 20 mins</span>
+
+                </div>
+
+            </div>
+
+            <div class="restaurant-card">
+
+                <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600"
+                    alt="Royal Biryani">
+
+                <div class="restaurant-info">
+
+                    <h3>Royal Biryani</h3>
+
+                    <p>Hyderabadi Biryani</p>
+
+                    <span>⭐ 4.9 | 30 mins</span>
+
+                </div>
+
+            </div>
+
+            <div class="restaurant-card">
+
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600"
+                    alt="Chinese Express">
+
+                <div class="restaurant-info">
+
+                    <h3>Chinese Express</h3>
+
+                    <p>Chinese</p>
+
+                    <span>⭐ 4.7 | 28 mins</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="why-us">
+
+        <div class="section-title">
+
+            <h2>Why Choose FreshBite?</h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <i class="fas fa-shipping-fast"></i>
+
+                <h3>Fast Delivery</h3>
+
+                <p>Hot and fresh food delivered in under 30 minutes.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fas fa-utensils"></i>
+
+                <h3>100+ Restaurants</h3>
+
+                <p>Choose from a wide variety of cuisines.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fas fa-tags"></i>
+
+                <h3>Best Offers</h3>
+
+                <p>Exciting discounts every day.</p>
+
+            </div>
+
+            <div class="why-card">
+
+                <i class="fas fa-headset"></i>
+
+                <h3>24/7 Support</h3>
+
+                <p>Always here to help you.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <p>"Amazing food quality and super fast delivery!"</p>
+
+                <h4>- Rahul</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>"The ordering process is very smooth and simple."</p>
+
+                <h4>- Swathi</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <p>"My favorite place to order pizzas every weekend."</p>
+
+                <h4>- Priya</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <h2>Subscribe for Latest Offers</h2>
+
+        <p>Get exclusive discounts directly in your inbox.</p>
+
+        <form>
+
+            <input type="email" placeholder="Enter your email">
+
+            <button type="submit" class="btn primary-btn">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-col">
+
+                <h2>🍕 FreshBite</h2>
+
+                <p>Your favorite food delivered fresh and fast.</p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="restaurants.html">Restaurants</a>
+
+                <a href="menu.html">Menu</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Contact</h3>
+
+                <p>Email: support@freshbite.com</p>
+
+                <p>Phone: +91 9876543210</p>
+
+                <p>Hyderabad, India</p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fab fa-facebook"></i>
+
+                    <i class="fab fa-instagram"></i>
+
+                    <i class="fab fa-twitter"></i>
+
+                    <i class="fab fa-linkedin"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 FreshBite. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/common.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

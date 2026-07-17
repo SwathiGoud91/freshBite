@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FreshBite | Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+🍕 FreshBite
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="restaurants.html">Restaurants</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-icons">
+
+<a href="wishlist.html">
+
+<i class="fa-solid fa-heart"></i>
+
+</a>
+
+<a href="cart.html" class="cart-btn">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">0</span>
+
+</a>
+
+<a href="login.html" class="login-btn" id="loginButton">
+
+Login
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section>
+
+<div class="section-title">
+
+<h2>Shopping Cart</h2>
+
+<p>Review your selected food items</p>
+
+</div>
+
+<div class="cart-container">
+
+<div id="cartItems">
+
+</div>
+
+<div class="order-summary">
+
+<h2>Order Summary</h2>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<span id="subtotal">₹0.00</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Delivery</span>
+
+<span id="delivery">₹0.00</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>GST (5%)</span>
+
+<span id="tax">₹0.00</span>
+
+</div>
+
+<hr>
+
+<div class="summary-row">
+
+<strong>Total</strong>
+
+<strong id="grandTotal">₹0.00</strong>
+
+</div>
+
+<a href="checkout.html"
+class="btn primary-btn place-order">
+
+Proceed to Checkout
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="copyright">
+
+© 2026 FreshBite. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
