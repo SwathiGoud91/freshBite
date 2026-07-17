@@ -110,5 +110,3 @@ Add your LinkedIn profile link
 
 This project is developed for learning and portfolio purposes.
 
-```
-```
